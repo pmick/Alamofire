@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Alamofire'
-  s.version = '4.0.0-beta.1'
+  s.version = '4.0.0-beta.2'
   s.license = 'MIT'
   s.summary = 'Elegant HTTP Networking in Swift'
   s.homepage = 'https://github.com/Alamofire/Alamofire'
@@ -14,4 +14,6 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
 
   s.source_files = 'Source/*.swift'
+  
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 end
